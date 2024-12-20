@@ -9,3 +9,4 @@ runner-results
 multi-reporter-config.json
 parallel-weights.json
 .tmp
+.env
