@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean:downloads": "rimraf cypress/downloads/*",
     "delete:reports": "rimraf cypress/reports/* || true",
-    "prereport": "npm run delete:reports"
+    "prereport": "npm run delete:reports",
+    "cy:run_test": "npm run prereport && npx cypress run"
   },
   "keywords": [],
   "author": "",
