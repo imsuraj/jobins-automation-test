@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      username: ${{ secrets.USERNAME }}
-      password: ${{ secrets.PASSWORD }}
+      USERNAME: ${{ secrets.USERNAME }}
+      PASSWORD: ${{ secrets.PASSWORD }}
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -36,8 +36,8 @@ jobs:
         with:
           command: npm run cy:run_test
         env:
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+          USERNAME: ${{ secrets.USERNAME }}
+          PASSWORD: ${{ secrets.PASSWORD }}
 
       - name: Uploading artifact
         uses: actions/upload-artifact@v4
